@@ -142,11 +142,32 @@ h1, h2, h3, h4 {
 }
 
 .product-image {
-    max-width: 100%;
-    height: auto;
+    width: 100%; /* Ocupa el 100% del contenedor */
+    max-width: 500px; /* Máximo ancho en pantallas grandes */
+    height: auto; /* Altura proporcional */
     border-radius: 6px;
-    margin: 1rem 0;
+    margin: 1rem auto; /* Centrado horizontal con margen vertical */
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    display: block; /* Para que el margin auto funcione */
+    
+    /* Transición suave para hover */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efecto al pasar el mouse (opcional) */
+.product-image:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* Media queries para ajustes específicos en móviles */
+@media (max-width: 768px) {
+    .product-image {
+        max-width: 100%; /* Ocupa todo el ancho disponible */
+        border-radius: 4px; /* Bordes ligeramente más pequeños */
+        margin: 0.8rem 0; /* Margen reducido */
+        box-shadow: 0 1px 4px rgba(0,0,0,0.1); /* Sombra más sutil */
+    }
 }
 
 .specs-table {
