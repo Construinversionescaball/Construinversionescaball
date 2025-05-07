@@ -200,21 +200,6 @@ body {
         display: none;
     }
     
-    .nav-links {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        gap: 15px;
-    }
-    
-    .nav-links li {
-        width: auto;
-    }
-    
-    .nav-links li a {
-        padding: 10px;
-        border-bottom: none;
-    }
     
     .hero {
         padding: 8rem 2rem;
@@ -477,3 +462,4 @@ footer {
         font-size: 13px;
     }
 }
+
