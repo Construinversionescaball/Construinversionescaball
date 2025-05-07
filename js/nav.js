@@ -3,7 +3,7 @@
             e.preventDefault();
             
             // Endpoint oculto de Formspree
-            const formspreeEndpoint = atob("https://formspree.io/f/myzwwngb");
+            const formspreeEndpoint = atob("https://formspree.io/f/meogkjzd");
             
             fetch(formspreeEndpoint, {
                 method: "POST",
